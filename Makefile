@@ -45,3 +45,7 @@ docs-load:
 docs-logs:
 #	-f, --follow[=false]  Follow log output
 	docker logs --follow $(container)
+
+# Pull the image
+docs-pull:
+	docker pull $(image)
