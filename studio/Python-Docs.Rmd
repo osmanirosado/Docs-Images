@@ -1,0 +1,72 @@
+---
+title: "Python Docs"
+output: html_notebook
+---
+
+## Version 1
+
+```{bash}
+cat v1.Dockerfile
+```
+
+
+```{bash}
+docker build --file v1.Dockerfile --tag example-build-v1  .
+```
+
+```{bash}
+docker history example-build-v1
+```
+
+## Version 2
+
+```{bash}
+cat v2.Dockerfile
+```
+
+```{bash}
+docker build --file v2.Dockerfile --tag example-build-v2  .
+```
+
+
+```{bash}
+docker history example-build-v2
+```
+
+
+## Version 3
+
+```{bash}
+cat v3.Dockerfile
+```
+
+```{bash}
+docker build --file v3.Dockerfile --tag example-build-v3  .
+```
+
+
+```{bash}
+docker history example-build-v3
+```
+
+## Version 4
+
+```{bash}
+cat v4.Dockerfile
+```
+
+```{bash}
+docker build --file v4.Dockerfile --tag example-build-v4  .
+```
+
+
+```{bash}
+docker history example-build-v4
+```
+
+## Resultado
+
+```{bash}
+docker images | grep example | sort --key=5 
+```
+
