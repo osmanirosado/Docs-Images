@@ -1,6 +1,8 @@
 ---
 title: "Python Docs"
-output: html_notebook
+output:
+  html_document:
+    keep_md: yes
 ---
 
 ## Version 1
